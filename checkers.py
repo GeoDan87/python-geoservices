@@ -6,6 +6,7 @@ import pandas as pd
 import geo_urls
 
 #Define the function for scraping the geoservice function information/documentation
+#This is probably best to be moved to a static file that is updated with each new release (if applicable)
 def get_fun_info():
     url = geo_urls.base_url
     url = quote(url, safe = ':/?&=')

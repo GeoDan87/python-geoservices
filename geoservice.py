@@ -2,6 +2,7 @@ from checkers import *
 
 def geoservice(funs, **fun_args):
     
+    #Check the input type for funs, it must be a list or a string
     if isinstance(funs, list):
         first_fun = funs[0]
         check_fun(first_fun)
